@@ -1,55 +1,146 @@
-# Sweet Shop Management System
 
-## Project Overview
-The Sweet Shop Management System is a full-stack web application that allows users to browse and purchase sweets while enabling administrators to manage inventory and monitor sales. The application includes authentication, inventory management, and order tracking features.
+Sweet Shop Management System
 
----
+Project Overview
 
-## Features
-- User registration and login
-- JWT-based authentication
-- Browse and search sweets
-- Add sweets to cart and purchase
-- Admin inventory management (add, update, delete sweets)
-- Stock management and restocking
-- Sales and order tracking
-- Backend unit testing using Jest
+The Sweet Shop Management System is a full-stack web application that allows users to browse and purchase sweets while enabling administrators to manage inventory, stock, and sales. The application follows real-world business logic with secure authentication, structured data handling, and a responsive user interface.
+
 
 ---
 
-## Tech Stack
+Features
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- JWT Authentication
-- Jest (Testing)
+User Features
 
-### Frontend
-- React
-- HTML, CSS
-- REST API Integration
+User registration and login
+
+JWT-based authentication
+
+Browse, search, and view available sweets
+
+Add sweets to cart and place orders
+
+Cart-to-database mapping using unique IDs
+
+When items are added to the cart, sweet names are converted into unique Sweet IDs before being stored in the database
+
+This approach ensures data normalization, clear order records, accurate billing, and easy future scalability
+
+
+View order history
+
+
+Admin Features
+
+Role-based access control for administrators
+
+Add, update, and delete sweets
+
+Manage inventory and stock levels
+
+Automatic stock quantity updates after successful purchases
+
+View sales and order records
+
+
+UI and UX
+
+Fully mobile-responsive design
+
+Supports mobile, tablet, and desktop screen sizes
+
+Simple and user-friendly interface
+
+
+Testing
+
+Backend unit and API testing using Jest
+
+Validation of authentication, inventory, and purchase workflows
+
+
 
 ---
 
-## How to Run the Project Locally
+Tech Stack
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- JWT Authentication
-- Jest (Testing)
+Backend
 
-### Frontend
-- React
-- HTML, CSS
-- REST API Integration
+Node.js
 
-- ###Demo Credentials (For Testing)
+Express.js
 
-The following test accounts are provided to help reviewers easily explore the application features.
+MongoDB with Mongoose
+
+JWT Authentication
+
+Jest for testing
+
+
+Frontend
+
+React
+
+HTML
+
+CSS
+
+REST API integration
+
+
+
+---
+
+Getting Started
+
+Prerequisites
+
+Node.js
+
+MongoDB
+
+npm or yarn
+
+
+Backend Setup
+
+1. Navigate to the backend directory
+
+
+2. Install dependencies
+
+npm install
+
+
+3. Create a .env file and add the required environment variables
+
+
+4. Start the backend server
+
+npm run dev
+
+
+
+Frontend Setup
+
+1. Navigate to the frontend directory
+
+
+2. Install dependencies
+
+npm install
+
+
+3. Start the frontend application
+
+npm start
+
+
+
+
+---
+
+Demo Credentials (For Testing)
 
 Admin Account
 
@@ -57,32 +148,40 @@ Email: admin@tes.com
 
 Password: strongpassword
 
+
 User Accounts
 
 Email: user@test.com
-
 Password: user123
 
 Email: user@test2.com
-
 Password: user123
 
-These accounts are created only for demonstration and testing purposes and do not contain any real user data.
+
+These accounts are created only for demonstration and testing purposes.
+
+
+---
 
 Screenshots
 
---Login Page
+Login Page
 
---Sweets Dashboard
+Sweets Dashboard
 
---Shopping Cart
+Shopping Cart
 
---Admin Inventory Management
+Admin Inventory Management
 
---Test Results (Jest)
+Jest Test Results
 
-My AI Usage
-AI Tools Used
+
+
+---
+
+AI Usage Disclosure
+
+Tools Used
 
 ChatGPT
 
@@ -90,14 +189,21 @@ Gemini
 
 Claude
 
-How I Used Them
 
-ChatGPT was used for backend development including REST API design, authentication logic, database interactions, and unit testing.
+Usage Details
 
-Gemini was used for frontend development including component structure, API integration, and state management.
+ChatGPT was used for backend development support including API design, authentication logic, database schema design, and unit testing.
 
-Claude was used for UI/UX improvements such as layout suggestions, styling guidance, and user experience refinements.
+Gemini was used for frontend development assistance including React component structure and API integration.
 
----Reflection
+Claude was used for UI and UX improvement suggestions.
 
-AI tools were used responsibly to assist development. All AI-generated outputs were reviewed, modified, and integrated manually to ensure correctness, originality, and compliance with project requirements.
+
+All AI-generated outputs were reviewed, modified, and manually integrated to ensure correctness, originality, and adherence to project requirements.
+
+
+---
+
+Reflection
+
+AI tools were used as development assistants and not as replacements for manual coding. The final implementation reflects independent problem-solving, practical full-stack development skills, and industry-aligned best practices.
