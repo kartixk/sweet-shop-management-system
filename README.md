@@ -144,7 +144,7 @@ Demo Credentials (For Testing)
 
 Admin Account
 
-Email: admin@tes.com
+Email: admin@test.com
 
 Password: strongpassword
 
